@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: linear-gradient(to bottom right, #f9fafb, #e6f4ea);
-  font-family: 'Poppins', 'Pretendard', sans-serif;
-  color: #333;
-}
+
+html, body, #root { height: 100%; }
+body { font-family: 'Poppins', 'Pretendard', ui-sans-serif, system-ui; }
+
+
+/***** KREAM 톤 느낌의 유틸 *****/
+.card { @apply bg-white rounded-2xl shadow-md border border-gray-100; }
+.btn { @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-semibold transition-transform hover:scale-[1.02]; }
+.btn-primary { @apply bg-brand-500 text-white hover:bg-brand-600; }
+.btn-ghost { @apply bg-white text-gray-700 border border-gray-200 hover:bg-gray-50; }
+.btn-orange { @apply bg-orange-500 text-white hover:bg-orange-600; }
+.input { @apply w-full border border-gray-200 rounded-xl px-3 py-2 focus:ring-2 focus:ring-brand-300 outline-none; }
+.badge { @apply inline-block text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-600; }
